@@ -67,7 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="novoCliente.html" />
     <Content Include="css\geral.css" />
+    <Content Include="clientes.html" />
     <Content Include="dashboard.html" />
     <Content Include="img\logo.jpg" />
     <Content Include="index.html" />
