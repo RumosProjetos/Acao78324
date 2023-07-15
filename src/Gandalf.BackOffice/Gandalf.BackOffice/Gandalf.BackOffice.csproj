@@ -67,8 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bootstrap\dashboard.html" />
     <Content Include="Bootstrap\index.html" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="img\logo.png" />
     <Content Include="Index.html" />
     <Content Include="WithoutBootstrap\novoCliente.html" />
     <Content Include="css\geral.css" />
