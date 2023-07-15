@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap\index.html" />
+    <Content Include="css\bootstrap.min.css" />
     <Content Include="Index.html" />
     <Content Include="WithoutBootstrap\novoCliente.html" />
     <Content Include="css\geral.css" />
