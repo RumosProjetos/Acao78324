@@ -72,8 +72,10 @@
     <Content Include="Bootstrap\dashboard.html" />
     <Content Include="Bootstrap\index.html" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\cdn.datatables.net_1.13.5_css_jquery.dataTables.css" />
     <Content Include="img\logo.png" />
     <Content Include="Index.html" />
+    <Content Include="script\cdn.datatables.net_1.13.5_js_jquery.dataTables.js" />
     <Content Include="script\code.jquery.com_jquery-3.7.0.min.js" />
     <Content Include="script\gstatic.com_charts_loader.js" />
     <Content Include="WithoutBootstrap\novoCliente.html" />
