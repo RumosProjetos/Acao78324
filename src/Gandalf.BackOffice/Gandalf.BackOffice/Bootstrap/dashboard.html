@@ -53,10 +53,35 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4 offset-md-4">
-
+            <div class="col-md-4">
+                <div class="alert alert-dismissible  alert-danger">
+                    <span id="spanAlerta01"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="alert alert-dismissible alert-info">
+                    <span id="spanAlerta02"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="alert alert-dismissible alert-primary">
+                    <span id="spanAlerta03"></span>
+                </div>
             </div>
         </div>
+        <hr />
+
+
+
+        <div id="divEstatisticas">
+            <div id="estatistica01"></div>
+            <div id="estatistica02"></div>
+            <div id="estatistica03"></div>
+            <div id="estatistica04"></div>
+        </div>
+
+
+
     </main>
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -73,6 +98,12 @@
             <li class="ms-3"><a class="text-muted" href="#" data-unsp-sanitized="clean"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
         </ul>
     </footer>
+
+
+    <script>
+        ObterAlertas();
+        ObterEstatisticas();
+    </script>
 
 </body>
 </html>
