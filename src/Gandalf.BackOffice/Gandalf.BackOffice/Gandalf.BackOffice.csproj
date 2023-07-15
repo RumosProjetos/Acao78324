@@ -72,6 +72,8 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="img\logo.png" />
     <Content Include="Index.html" />
+    <Content Include="script\code.jquery.com_jquery-3.7.0.min.js" />
+    <Content Include="script\gstatic.com_charts_loader.js" />
     <Content Include="WithoutBootstrap\novoCliente.html" />
     <Content Include="css\geral.css" />
     <Content Include="WithoutBootstrap\clientes.html" />

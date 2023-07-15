@@ -132,3 +132,70 @@ var formatarClientes = function (clientes) {
 
     elemento.innerHTML = cabecalho + corpo + rodape;
 }
+
+function ObterEstatisticasBootstrap() {
+    $("#estPedidos").html(Math.floor(Math.random() * 100));
+    $("#estClientes").html(Math.floor(Math.random() * 100));
+    $("#estEstoques").html(Math.floor(Math.random() * 100));
+    $("#estProdutos").html(Math.floor(Math.random() * 100));
+}
+
+function ObterGraficoVendas() {
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    var maximoVendas = 10000;
+    var maximoClientes = 5000;
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Dia', 'Vendas', 'Clientes'],
+            ['Seg', Math.floor(Math.random() * maximoVendas), Math.floor(Math.random() * maximoClientes)],
+            ['Ter', Math.floor(Math.random() * maximoVendas), Math.floor(Math.random() * maximoClientes)],
+            ['Qua', Math.floor(Math.random() * maximoVendas), Math.floor(Math.random() * maximoClientes)],
+            ['Qui', Math.floor(Math.random() * maximoVendas), Math.floor(Math.random() * maximoClientes)],
+            ['Sex', Math.floor(Math.random() * maximoVendas), Math.floor(Math.random() * maximoClientes)],
+        ]);
+
+        var options = {
+            title: 'Vendas',
+            subtitle: 'Vendas da semana',
+            hAxis: { title: 'Dia', titleTextStyle: { color: '#333' } },
+            vAxis: { minValue: 0 }
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('graficoVendas'));
+        chart.draw(data, options);
+    }
+}
+
+function ObterGraficoNovosClientes() {  
+    var clientesNovos = 10000;
+    var clientesRecorrentes = 2000;
+
+    google.charts.load('current', { 'packages': ['bar'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Dia', 'Novos', 'Recorrentes'],
+            ['Seg', Math.floor(Math.random() * clientesNovos), Math.floor(Math.random() * clientesRecorrentes)],
+            ['Ter', Math.floor(Math.random() * clientesNovos), Math.floor(Math.random() * clientesRecorrentes)],
+            ['Qua', Math.floor(Math.random() * clientesNovos), Math.floor(Math.random() * clientesRecorrentes)],
+            ['Qui', Math.floor(Math.random() * clientesNovos), Math.floor(Math.random() * clientesRecorrentes)],
+            ['Sex', Math.floor(Math.random() * clientesNovos), Math.floor(Math.random() * clientesRecorrentes)],
+        ]);
+
+        var options = {
+            chart: {
+                title: 'Clientes da Semana',
+                subtitle: 'Novos X Recorrentes',
+            },
+            bars: 'vertical'
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('graficoNovosClientes'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+}
