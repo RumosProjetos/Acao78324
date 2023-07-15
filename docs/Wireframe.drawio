@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-13T20:14:28.885Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="9GWgh05_uaPofftpuChs" version="21.3.4" type="device" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-07-13T20:55:10.194Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="yb2LV674tJy8J5hZvCr5" version="21.3.4" type="device" pages="3">
   <diagram name="Index" id="03018318-947c-dd8e-b7a3-06fadd420f32">
     <mxGraphModel dx="2314" dy="1059" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -121,7 +121,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Clientes" id="oNGtFRbFQrGq5dhSFdXn">
-    <mxGraphModel dx="1386" dy="1049" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2074" dy="1059" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="qOBHz_FV8eMda5bh8cIR-0" />
         <mxCell id="qOBHz_FV8eMda5bh8cIR-1" parent="qOBHz_FV8eMda5bh8cIR-0" />
