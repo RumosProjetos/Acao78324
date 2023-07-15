@@ -103,17 +103,19 @@ function ObterClientes() {
             dataNascimento: "01/01/2001",
             email: "cliente" + i + "@email.com",
             cidade: "Cidade 0" + i,
-            nif: "123456789"
+            nif: Math.floor(Math.random() * 1000000)
         };
 
         clientes[i] = cliente;
     }
 
-    formatarClientes(clientes);
+
+    return clientes;
+    //formatarClientes(clientes);
 
 }
 
-var formatarClientes = function (clientes) {
+var FormatarClientes = function (clientes) {
     var elemento = document.getElementById("tblClientes");
     var cabecalho = "<tbody><tr><th>Id</th><th>Nome</th><th>Endereço</th><th>Data de Nascimento</th><th>Email</th><th>Cidade</th><th>NIF</th></tr>";
     var corpo = "";
@@ -169,7 +171,7 @@ function ObterGraficoVendas() {
     }
 }
 
-function ObterGraficoNovosClientes() {  
+function ObterGraficoNovosClientes() {
     var clientesNovos = 10000;
     var clientesRecorrentes = 2000;
 
@@ -198,4 +200,25 @@ function ObterGraficoNovosClientes() {
 
         chart.draw(data, google.charts.Bar.convertOptions(options));
     }
+}
+
+function ObterListagemClientesDatatable() {
+    var data = ObterClientes();
+
+    $('#tblClientes').DataTable({
+        data: data,
+        language: {
+            url: '//cdn.datatables.net/plug-ins/1.13.5/i18n/pt-PT.json',
+        },
+        pageLength: 5,
+        columns: [
+            { data: 'id' },
+            { data: 'nome' },
+            { data: 'endereco' },
+            { data: 'dataNascimento' },
+            { data: 'email' },
+            { data: 'cidade' },
+            { data: 'nif' }
+        ]
+    });
 }
