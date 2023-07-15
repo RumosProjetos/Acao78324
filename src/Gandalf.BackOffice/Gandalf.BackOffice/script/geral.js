@@ -95,7 +95,7 @@ function FormatarEstatisticas(elemento, dados) {
 function ObterClientes() {
     var clientes = [];
 
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < Math.random() * 10000; i++) {
         var cliente = {
             id: i,
             nome: "Cliente 0" + i,
