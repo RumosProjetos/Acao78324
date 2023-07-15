@@ -208,7 +208,7 @@ function ObterListagemClientesDatatable() {
     $('#tblClientes').DataTable({
         data: data,
         language: {
-            url: '//cdn.datatables.net/plug-ins/1.13.5/i18n/pt-PT.json',
+            url: '//cdn.datatables.net/plug-ins/1.13.5/i18n/pt-BR.json',
         },
         pageLength: 5,
         columns: [
